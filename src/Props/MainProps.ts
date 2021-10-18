@@ -14,3 +14,9 @@ export interface PageContainerProps {
     description: string; 
     component: JSX.Element 
 }
+
+export interface HomeSingleCardProps {
+    title: string; 
+    icon: string;
+    link: string;
+}
