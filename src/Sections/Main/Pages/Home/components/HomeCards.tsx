@@ -11,7 +11,7 @@ interface HomeSingleCardProps {
 const HomeSingleCard = (props: HomeSingleCardProps) => (
     <div className="site-col-6 home-api-card">
         <SiteLink 
-            link={props.link} 
+            link={`/${props.link}`}
             type="local" 
             placeholder={
                 <>

@@ -1,6 +1,6 @@
 {
   "name": "backend-portfolio",
-  "homepage": "http://kachiic.github.io/backend_portfolio",
+  "homepage": "http://kachiic.github.io/backend_portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
