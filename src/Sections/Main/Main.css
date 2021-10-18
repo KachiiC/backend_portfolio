@@ -1,0 +1,29 @@
+main {
+    text-align: center;
+    margin-top: 43px;
+    min-height: 80vh;
+    padding: 10px 0px 0px;
+    background: white;
+}
+
+.page-container {
+    margin: auto;
+    width: 80%;
+    padding: 25px 0px;
+}
+
+.page-container p {
+    width: 80%;
+    margin: 0px auto 35px;
+    font-size: 15px;
+}
+
+.endpoint-table {
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1080px) {
+    .page-container p {
+        width: 100%;
+    }
+}

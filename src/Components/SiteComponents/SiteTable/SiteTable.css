@@ -1,0 +1,50 @@
+.site-table-container {
+    overflow-x: scroll;
+    margin-bottom: 25px;
+}
+
+.site-table-overflow {
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+
+.site-table {
+    margin: 20px auto 0px;
+    width: 100%;
+}
+
+.site-table tr {
+    border: 1px solid black;
+}
+
+.site-table th {
+    border: 1px solid black;
+}
+
+.site-table td,
+.site-table th {
+    padding: 10px 25px;
+    font-size: 15px;
+}
+
+.site-table tr th {
+    background: black;
+    color: white;
+}
+
+.site-table tr:nth-child(odd) td:nth-child(odd),
+.site-table tr:nth-child(even) td:nth-child(even) {
+    background: rgb(230, 230, 230);
+}
+
+.site-table-container::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 1080px) {
+    .site-table td {
+        text-align: left;
+    }
+
+}
