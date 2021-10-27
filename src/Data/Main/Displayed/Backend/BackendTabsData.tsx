@@ -8,6 +8,9 @@ import { MmaDictionaryEndpoint, MmaDictionaryExampleData } from "./Tabs/MMADicti
 import { MmaFighterEndpoint, MmaFighterExampleData } from "./Tabs/MmaFighter";
 import { MmaStoreEndpoint, MmaStoreExampleData } from "./Tabs/MmaStore";
 import { MmaTechniquesEndpoint, MmaTechniquesExampleData } from "./Tabs/MmaTechniques";
+import { CrpytoEndpoint, CryptoExampleData } from "./Tabs/CryptoApi";
+import { StockEndpoint, StockExampleData } from "./Tabs/StockApi";
+import { IndicesEndpoint, IndicesExampleData } from "./Tabs/IndicesApi";
 
 const BackendTabsData = [
     {
@@ -45,6 +48,24 @@ const BackendTabsData = [
         description: "This api is desgined using a csv converter. The data sits in the data files of the backend and can only be repopulated by the admin with django commands. The techniques contain common techniques used in mma (mixed martial arts). Each object returns the title of the technique, type of technique, the discipline it comes from, the difficulty of the technique, a description, a tutorial and common mistakes of the technique. A featured argument can also be passed to return a technique at random. Additionally you can also searching a specific technique or technique type (for exmaple submissions techniques).",
         endpoint: MmaTechniquesEndpoint,
         example: MmaTechniquesExampleData
+    },
+    {
+        title: "Stock",
+        description: "",
+        endpoint: StockEndpoint,
+        example: StockExampleData
+    },
+    {
+        title: "Indices",
+        description: "",
+        endpoint: IndicesEndpoint,
+        example: IndicesExampleData
+    },
+    {
+        title: "Crypto",
+        description: "",
+        endpoint: CrpytoEndpoint,
+        example: CryptoExampleData
     },
 ]
 
