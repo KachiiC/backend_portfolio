@@ -37,3 +37,5 @@ export const TitleLogic = (title: string | undefined, size: string | undefined) 
 export const StringUppercase = (string: string) => {
     return string.split("_").join(" ").toUpperCase()
 }
+
+export const StringJoiner = (string: string) => string.split(" ").join("-")

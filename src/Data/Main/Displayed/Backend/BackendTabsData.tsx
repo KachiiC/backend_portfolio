@@ -51,19 +51,19 @@ const BackendTabsData = [
     },
     {
         title: "Stock",
-        description: "",
+        description: "This api...",
         endpoint: StockEndpoint,
         example: StockExampleData
     },
     {
         title: "Indices",
-        description: "",
+        description: "This api...",
         endpoint: IndicesEndpoint,
         example: IndicesExampleData
     },
     {
         title: "Crypto",
-        description: "",
+        description: "This api...",
         endpoint: CrpytoEndpoint,
         example: CryptoExampleData
     },
