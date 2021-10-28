@@ -1,32 +1,26 @@
 // TOOLS
 import { LinkRenderer } from "Tools/RoutersRender"
 // PAGES
-import DisplayedData from "./DisplayedData"
-import PageContainer from "Components/PageComponents/PageContainer"
+// import DisplayedData from "./DisplayedData"
+// import PageContainer from "Components/PageComponents/PageContainer"
 import { pageDataProps } from "Props/MainProps"
+import BackendTabsData from "./Backend/BackendPagesData"
+import ApiTabsData from "./Api/ApiPagesData"
 
 const PagesData:pageDataProps [] = [
+    {
+        title: "Api",
+        sub_menu: ApiTabsData
+    },
+    {
+        title: "Backend",
+        sub_menu: BackendTabsData
+    },
     {
         title: "Code",
         external_link: "https://github.com/KachiiC/Kachiis_Rest"
     }
 ]
-
-DisplayedData.map((data) => {
-
-    const content = (
-        <PageContainer 
-            title={data.title}
-            description={data.description}
-            component={data.component}
-        />
-    )
-
-    return PagesData.unshift({
-        title: data.title,
-        content: content
-    })
-})
 
 // Returns the data as links before export
 LinkRenderer(PagesData)

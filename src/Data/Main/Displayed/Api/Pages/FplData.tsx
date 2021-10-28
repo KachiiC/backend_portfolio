@@ -1,13 +1,15 @@
 import { KachiisRest } from "Tools/ApiTools";
 
+const fpl = (input:string) => KachiisRest("api", "fpl/") + input
+
 export const FplEndpointsData = [
     {
         title: "Fantasy Premier League Stats",
-        url: KachiisRest("api", "fpl/league=LEAGUE_ID")
+        url: fpl("league=LEAGUE_ID")
     },
     {
         title: "Fantasy Premier League Player",
-        url: KachiisRest("api", "fpl/player=PLAYED_ID")
+        url: fpl("player=PLAYED_ID")
     }
 ]
 

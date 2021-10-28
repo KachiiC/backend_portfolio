@@ -1,7 +1,7 @@
 // CSS
-import { HomeCards } from './components/HomeCards'
 import './Home.css'
 // COMPONENTS
+import { HomeCards } from './components/HomeCards'
 
 const HomeData = [
     {

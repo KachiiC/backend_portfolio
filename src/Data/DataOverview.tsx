@@ -24,7 +24,6 @@ const DataOverview = {
         about: <h1>About</h1>,
         contact: <h1>Contact</h1>,
         faq: <h1>FAQ</h1>,
-        backend: <h1>Backend</h1>,
         code: <h1>Code</h1>
     }
 }

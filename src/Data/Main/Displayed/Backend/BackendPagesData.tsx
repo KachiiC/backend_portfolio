@@ -1,7 +1,7 @@
-// PAGES
+// PROPS
 // COMPONENTS
-import { ApiTabsDataProps } from "Props/Api/ApiTabs";
-import { TabTemplateComponent } from "Components/PageComponents/TabTemplateComponent";
+import { PageContainer } from "Components/PageComponents/PageContainer";
+// PAGES
 import { HskEndpointsData, HskExampleData } from "./Tabs/HskApi";
 import { MmaArticlesEndpoint, MmaArticlesExampleData } from "./Tabs/MmaArticles";
 import { MmaDictionaryEndpoint, MmaDictionaryExampleData } from "./Tabs/MMADictioanry";
@@ -12,7 +12,7 @@ import { CrpytoEndpoint, CryptoExampleData } from "./Tabs/CryptoApi";
 import { StockEndpoint, StockExampleData } from "./Tabs/StockApi";
 import { IndicesEndpoint, IndicesExampleData } from "./Tabs/IndicesApi";
 
-const BackendTabsData = [
+const BackendPagesData = [
     {
         title: "Hsk",
         description: "This Api endpoints uses a CSV to populate the database and returns a list of chinese words. Each object returns the hsk level, chinese charcter, definition, pinyin(pronunciation) and word type (for example,verb).",
@@ -69,15 +69,20 @@ const BackendTabsData = [
     },
 ]
 
-BackendTabsData.map((tab: ApiTabsDataProps) => {
+BackendPagesData.map((tab: any) => {
     tab.content = (
-        <TabTemplateComponent
+        <PageContainer
+            description={tab.description}
             endpoints={tab.endpoint}
             example={tab.example}
+            title={tab.title}
         />
     )
     
-    return tab
+    return {
+        title: tab.title,
+        content: tab.content
+    }
 })
 
-export default BackendTabsData
+export default BackendPagesData

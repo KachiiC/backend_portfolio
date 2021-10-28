@@ -20,7 +20,8 @@ export interface pageTemplateProps {
 export interface PageContainerProps { 
     title: string; 
     description: string; 
-    component: JSX.Element 
+    endpoints: any
+    example: string;
 }
 
 export interface HomeSingleCardProps {

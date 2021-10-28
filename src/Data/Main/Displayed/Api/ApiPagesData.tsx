@@ -1,14 +1,14 @@
+// PROPS
 // PAGES
-import { FplEndpointsData, FplExamplePlayerData } from "./Tabs/FplData";
-import { InstagramEndpointsData, InstagramExampleData } from "./Tabs/InstragramData";
-import { PokemonEndpointsData, PokemonExampleData } from "./Tabs/PokemonData";
-import { WeatherEndpointsData, WeatherExampleData } from "./Tabs/WeatherData";
-import { YoutubeEndpointsData, YoutubeExampleData } from "./Tabs/YoutubeData";
+import { FplEndpointsData, FplExamplePlayerData } from "./Pages/FplData";
+import { InstagramEndpointsData, InstagramExampleData } from "./Pages/InstragramData";
+import { PokemonEndpointsData, PokemonExampleData } from "./Pages/PokemonData";
+import { WeatherEndpointsData, WeatherExampleData } from "./Pages/WeatherData";
+import { YoutubeEndpointsData, YoutubeExampleData } from "./Pages/YoutubeData";
 // COMPONENTS
-import { ApiTabsDataProps } from "Props/Api/ApiTabs";
-import { TabTemplateComponent } from "Components/PageComponents/TabTemplateComponent";
+import { PageContainer } from "Components/PageComponents/PageContainer";
 
-const ApiTabsData = [
+const ApiPagesData = [
     {
         title: "Fpl",
         description: "This Api endpoints uses the fantansy premier league api. The server requests information from the server and returns either a players individual data or league. The data includes the following: player id , player name , team name, current gameweek, last gameweek points , points total, transfers total, points spent on transfers, team value, chips used, and details on each matchweek of player.",
@@ -41,15 +41,20 @@ const ApiTabsData = [
     }
 ]
 
-ApiTabsData.map((tab: ApiTabsDataProps) => {
+ApiPagesData.map((tab: any) => {
     tab.content = (
-        <TabTemplateComponent
+        <PageContainer
+            description={tab.description}
             endpoints={tab.endpoint}
             example={tab.example}
+            title={tab.title}
         />
     )
     
-    return tab
+    return {
+        title: tab.title,
+        content: tab.content
+    }
 })
 
-export default ApiTabsData
+export default ApiPagesData

@@ -1,3 +1,5 @@
+import Api from "Sections/Main/Pages/Hidden/Api"
+import Backend from "Sections/Main/Pages/Hidden/Backend"
 import Test from "Sections/Main/Pages/Hidden/Test"
 // TOOLS
 import { LinkRenderer } from "Tools/RoutersRender"
@@ -5,6 +7,14 @@ import { LinkRenderer } from "Tools/RoutersRender"
 
 // Pages are hidden from navbar
 const HiddenPagesData = [
+    {
+        title: "Api",
+        content: Api
+    },
+    {
+        title: "Backend",
+        content: Backend
+    },
     {
         title: "Test",
         content: <Test />

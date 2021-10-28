@@ -1,7 +1,7 @@
 // PROPS
 import { ApiEndpointsProps } from "Props/Api/ApiEndpoints";
 // COMPONENTS
-import ApiTabsData from "./ApiTabsData";
+import ApiTabsData from "./ApiPagesData";
 
 const ApiListData: ApiEndpointsProps[] = []
     

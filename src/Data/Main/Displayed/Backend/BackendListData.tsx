@@ -1,10 +1,10 @@
 // PROPS
 import { ApiEndpointsProps } from "Props/Api/ApiEndpoints"
-import BackendTabsData from "./BackendTabsData"
+import BackendPagesData from "./BackendPagesData"
 
 export const BackendListData:ApiEndpointsProps[] = []
 
-BackendTabsData.map((tab: any) => tab.endpoint.map((tab: any) => BackendListData.push(tab)))
+const BackendList = BackendPagesData.map((tab: any) => tab.endpoint.map((tab: any) => BackendListData.push(tab)))
 
 
-export default BackendListData
+export default BackendList
